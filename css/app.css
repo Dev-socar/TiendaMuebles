@@ -37,6 +37,9 @@ img {
     max-width: 100%;
     display: block;
 }
+textarea{
+    resize: none;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -67,6 +70,7 @@ ul{
     padding: 1rem;
     transition: background-color .3s ease;
     text-align: center;
+    border: none;
 }
 .btn:hover{
     background-color: #eb790f;
@@ -91,13 +95,13 @@ ul{
     display: flex;
     justify-content:space-evenly;
     width: 70%;
-    
 }
 .nav-principal a{
     padding: .5rem;
     transition: all 0s ease;
     display: block;
     text-align: center;
+    font-size: 1.8rem;
 }
 .enlace-activo,
 .nav-principal a:hover{
@@ -156,7 +160,7 @@ ul{
     background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
     padding: 10rem 0;
     background-repeat: no-repeat;
-    background-size: 100%, 90rem;
+    background-size: 100%, 100rem;
     background-position: left center;
 }
 .sobre-nosotros-flex{
@@ -310,4 +314,43 @@ ul{
 }
 .galeria li:nth-child(6){
     grid-column: 1 / 4;
+}
+
+/*Formulario*/
+
+.formulario{
+    max-width:60rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+.formulario fieldset{
+    border: 1px solid #000;
+    margin-bottom: 2rem;
+}
+.formulario legend{
+    color: #fff;
+    background-color: #eb790f;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.campo label{
+    flex-basis: 10rem;
+}
+.campo input:not([type="radio"]),
+.campo textarea, 
+.campo select{
+    flex: 1;
+    background-color: #e1e1e15b;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
 }
